@@ -82,7 +82,7 @@ const deleteDocument = async(req,res) => {
             return res.status(404).json({ mssg: "this document does not exist"})
         }
 
-        return res.status(200).json({ mssg: "Document deleted successfully", document})
+        return res.status(200).json({document})
 
     } catch(error) {
 
